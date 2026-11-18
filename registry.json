@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "stepped-modal",
+  "homepage": "https://your-domain.com",
+  "items": [
+    {
+      "name": "stepped-modal",
+      "type": "registry:ui",
+      "title": "Stepped Modal",
+      "description": "Responsive multi-step modal: dialog on desktop, draggable drawer on mobile.",
+      "registryDependencies": ["dialog", "drawer", "button"],
+      "files": [
+        { "path": "registry/stepped-modal/stepped-modal.tsx", "type": "registry:ui" },
+        { "path": "registry/stepped-modal/use-stepper.ts", "type": "registry:hook" },
+        { "path": "registry/stepped-modal/use-media-query.ts", "type": "registry:hook" }
+      ]
+    }
+  ]
+}
