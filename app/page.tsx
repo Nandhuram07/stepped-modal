@@ -8,8 +8,7 @@ import { Label } from "@/components/ui/label"
 import { SteppedModal } from "@/components/ui/stepped-modal"
 import { cn } from "@/lib/utils"
 
-const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
-
+const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms))
 function FieldError({ message }: { message: string }) {
   if (!message) return null
   return (
